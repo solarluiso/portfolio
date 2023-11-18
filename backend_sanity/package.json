@@ -34,5 +34,11 @@
     "printWidth": 100,
     "bracketSpacing": false,
     "singleQuote": true
+  },
+  "cors": {
+    "origins": [
+      "http://localhost:3000",
+      "http://localhost:3333"
+    ]
   }
 }
