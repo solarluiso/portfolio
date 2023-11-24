@@ -47,6 +47,7 @@ const Work = () => {
         My Creative <span>Portfolio</span> Section
       </h2>
 
+      {/* Pills to categorize my applications */}
       <div className="app__work-filter">
         {["UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
           (item, index) => (
