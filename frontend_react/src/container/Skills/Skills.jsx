@@ -75,7 +75,7 @@ const Skills = () => {
                       <h4
                         className="bold-text"
                         data-tooltip-id="my-tooltip"
-                        data-tooltip-content={work.desc}
+                        data-tooltip-content={work.description}
                       >
                         {work.name}
                       </h4>

@@ -43,9 +43,9 @@ const Testimonial = () => {
       {testimonials.length && (
         <>
           <div className="app__testimonial-item app__flex">
-            {testimonials[currentIndex]?.imgurl && (
+            {testimonials[currentIndex]?.imgUrl && (
               <img
-                src={urlFor(testimonials[currentIndex]?.imgurl).toString()}
+                src={urlFor(testimonials[currentIndex]?.imgUrl)}
                 alt={testimonials[currentIndex]?.name}
               />
             )}
@@ -100,9 +100,8 @@ const Testimonial = () => {
             transition={{ duration: 0.5, type: "tween" }}
             key={brand._id}
           >
-            {/* Add a check to ensure imgUrl is defined before using it */}
             {brand.imgUrl && (
-              <img src={urlFor(brand.imgUrl).toString()} alt={brand.name} />
+              <img src={urlFor(brand.imgUrl)} alt={brand.name} />
             )}
           </motion.div>
         ))}
